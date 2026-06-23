@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +14,340 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header section">
+      <div class="header__logo">&lt;/HTML&gt;</div>
+      <h1 class="header__title">закрывающий тег</h1>
+    </header>
+    <main class="content">
+      <ul class="card-list">
+        <li class="card section">
+          <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;старт&gt;</span>
+            <img
+              class="card__image card__image_filter_warmup"
+              src="./images/image.jpg"
+              alt="Рабочее место перед началом обучения"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              В начале всё казалось набором отдельных слов: макет, репозиторий,
+              ветка, Pixel Perfect. Я медленно собирал систему координат и
+              радовался каждому моменту, когда непонятное становилось рабочим.
+            </p>
+            <p>
+              Самым важным оказалось не торопиться. Подготовка дала ощущение,
+              что даже большой проект можно разложить на маленькие действия и
+              спокойно пройти их по порядку.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="card section">
+          <h2 class="card__title">1 спринт: Я - чистый лист</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;вход&gt;</span>
+            <img
+              class="card__image card__image_filter_blank"
+              src="./images/image (1).jpg"
+              alt="Светлый лист и первые наброски"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              Первый спринт был похож на чистый лист: красиво, страшно и совсем
+              непонятно, где провести первую линию. HTML постепенно стал не
+              набором тегов, а способом дать странице смысл.
+            </p>
+            <p>
+              Я запомнил это состояние как тренировку внимания. Оказалось, что
+              аккуратная структура делает половину работы ещё до стилей.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="card section">
+          <h2 class="card__title">1 спринт: А если не получится?</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;сомнение&gt;</span>
+            <img
+              class="card__image card__image_filter_doubt"
+              src="./images/image (2).jpg"
+              alt="Размытый городской свет"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              Иногда казалось, что все вокруг понимают быстрее. Я зависал на
+              мелочах, перечитывал теорию и ловил себя на желании закрыть
+              вкладку.
+            </p>
+            <p>
+              Но именно там появился полезный навык: не спорить с ошибкой, а
+              смотреть на неё как на подсказку. Консоль и валидатор стали
+              спокойнее любых догадок.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="card section">
+          <h2 class="card__title">2 спринт: Погоня за идеальным макетом</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;пиксели&gt;</span>
+            <img
+              class="card__image card__image_filter_focus"
+              src="./images/image (3).jpg"
+              alt="Сетка и детали интерфейса"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              На втором спринте я впервые по-настоящему понял, что CSS любит
+              точность. Один лишний пиксель мог менять настроение всей секции.
+            </p>
+            <p>
+              Сетка, отступы и размеры перестали быть случайными числами.
+              Появилось удовольствие от того, как элементы наконец встают на
+              свои места.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="card section">
+          <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;команда&gt;</span>
+            <img
+              class="card__image card__image_filter_support"
+              src="./images/image (4).jpg"
+              alt="Люди за совместной работой"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              Я недооценивал, насколько помогают чужие вопросы и ревью. Иногда
+              достаточно одной фразы, чтобы увидеть собственную ошибку с другой
+              стороны.
+            </p>
+            <p>
+              Постепенно стало легче просить помощи и спокойнее объяснять свои
+              решения. Это тоже часть профессии, и, кажется, одна из самых
+              важных.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="card section">
+          <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;поиск&gt;</span>
+            <img
+              class="card__image card__image_filter_route"
+              src="./images/image (5).jpg"
+              alt="Дорога и направление движения"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              Когда решение не приходило сразу, я учился обходить задачу:
+              упрощать пример, проверять гипотезу отдельно, возвращаться к
+              документации.
+            </p>
+            <p>
+              Это изменило отношение к тупикам. Тупик оказался не стеной, а
+              местом, где нужно поменять масштаб и посмотреть шире.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="card section">
+          <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;пауза&gt;</span>
+            <img
+              class="card__image card__image_filter_pause"
+              src="./images/image (6).jpg"
+              alt="Тихий вечер и пауза в работе"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              Бывали дни, когда даже простая правка давалась тяжело. Тогда
+              помогали паузы, короткие списки задач и честное признание: сегодня
+              достаточно сделать немного.
+            </p>
+            <p>
+              Странно, но после таких остановок код становился понятнее. Видимо,
+              обучение тоже нуждается в воздухе.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+        <li class="card section">
+          <h2 class="card__title">«Сейчас я здесь»</h2>
+          <div class="card__image-wrapper">
+            <span class="card__label">&lt;дальше&gt;</span>
+            <img
+              class="card__image card__image_filter_now"
+              src="./images/image (7).jpg"
+              alt="Открытый горизонт и новое направление"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p>
+              Сейчас я чувствую, что стал увереннее смотреть на интерфейс как
+              на систему. В нём есть смысл, ритм, поведение и много маленьких
+              решений, которые пользователь не обязан замечать.
+            </p>
+            <p>
+              Впереди ещё много пробелов, но теперь они выглядят не пустотой, а
+              картой будущих тем. И это хорошее ощущение для закрывающего тега.
+            </p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button" type="button" aria-label="Поставить лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <g class="heart">
+                  <path class="core" fill="none" d="M15 12h3v3h-3v-3Zm6 0h3v3h-3v-3Zm-9 3h15v3H12v-3Zm3 3h9v3h-9v-3Z"/>
+                  <path class="main-body" fill="none" d="M9 9h6v3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3H9v-3H6v-9h3V9Z"/>
+                  <path class="contour" fill="var(--contour-color)" fill-rule="evenodd" d="M12 6H9v3H6v3H3v9h3v3h3v3h3v3h3v-3h3v-3h3v-3h3v-3h3v-9h-3V9h-3V6h-6v3h-3v3h-3V9h-3V6h-6Zm0 3h3v3h3v3h3v-3h3V9h6v3h3v9h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3H9v-3H6v-9h3V9h3Z"/>
+                </g>
+                <path class="sparks" fill="var(--animation-fill-color)" d="M36 13h3v3h-3v-3Zm-9-12h3v6h-3V1Zm-18 0h3v6H9V1ZM0 13h3v3H0v-3Zm30 18h6v3h-6v-3ZM3 31h6v3H3v-3Z"/>
+              </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <button class="button save-button" type="button">
+        <svg class="save-button__icon" width="21" height="21" viewBox="0 0 39 39" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </main>
+    <dialog class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" width="39" height="39" viewBox="0 0 39 39" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <form method="dialog">
+        <button class="button dialog__button" type="submit">
+          <span class="button__text">ОК</span>
+        </button>
+      </form>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
