@@ -14,7 +14,6 @@ const iconButtonArray = document.querySelectorAll('.card__icon-button');
 const saveButton = document.querySelector('.save-button');
 const dialog = document.querySelector('.dialog');
 const dialogButton = document.querySelector('.dialog__button');
-const dialogForm = document.querySelector('.dialog__form');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>
@@ -74,11 +73,6 @@ saveButton.addEventListener('click', (event) => {
 });
 
 dialogButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  closeDialog();
-});
-
-dialogForm.addEventListener('submit', (event) => {
   event.preventDefault();
   closeDialog();
 });
