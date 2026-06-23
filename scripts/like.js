@@ -44,7 +44,7 @@ function setButtonText(heart, button) {
 }
 
 function openDialog() {
-  if (dialog.open) {
+  if (dialog.open || dialog.hasAttribute('open')) {
     return;
   }
 
@@ -56,7 +56,7 @@ function openDialog() {
 }
 
 function closeDialog() {
-  if (!dialog.open) {
+  if (!dialog.open && !dialog.hasAttribute('open')) {
     return;
   }
 
