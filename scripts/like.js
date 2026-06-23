@@ -14,6 +14,7 @@ const iconButtonArray = document.querySelectorAll('.card__icon-button');
 const saveButton = document.querySelector('.save-button');
 const dialog = document.querySelector('.dialog');
 const dialogButton = document.querySelector('.dialog__button');
+const dialogForm = document.querySelector('.dialog__form');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>
@@ -45,10 +46,24 @@ function setButtonText(heart, button) {
 
 saveButton.addEventListener('click', (event) => {
   event.preventDefault();
-  dialog.showModal();
+
+  if (!dialog.open) {
+    dialog.showModal();
+  }
 });
 
 dialogButton.addEventListener('click', (event) => {
   event.preventDefault();
-  dialog.close();
+
+  if (dialog.open) {
+    dialog.close();
+  }
+});
+
+dialogForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (dialog.open) {
+    dialog.close();
+  }
 });
