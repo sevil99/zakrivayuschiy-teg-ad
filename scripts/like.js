@@ -44,26 +44,41 @@ function setButtonText(heart, button) {
   }
 }
 
+function openDialog() {
+  if (dialog.open) {
+    return;
+  }
+
+  if (typeof dialog.showModal === 'function') {
+    dialog.showModal();
+  } else {
+    dialog.setAttribute('open', '');
+  }
+}
+
+function closeDialog() {
+  if (!dialog.open) {
+    return;
+  }
+
+  if (typeof dialog.close === 'function') {
+    dialog.close();
+  } else {
+    dialog.removeAttribute('open');
+  }
+}
+
 saveButton.addEventListener('click', (event) => {
   event.preventDefault();
-
-  if (!dialog.open) {
-    dialog.showModal();
-  }
+  openDialog();
 });
 
 dialogButton.addEventListener('click', (event) => {
   event.preventDefault();
-
-  if (dialog.open) {
-    dialog.close();
-  }
+  closeDialog();
 });
 
 dialogForm.addEventListener('submit', (event) => {
   event.preventDefault();
-
-  if (dialog.open) {
-    dialog.close();
-  }
+  closeDialog();
 });
