@@ -11,9 +11,6 @@
 const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
-const saveButton = document.querySelector('.save-button');
-const dialog = document.querySelector('.dialog');
-const dialogButton = document.querySelector('.dialog__button');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>
@@ -42,37 +39,3 @@ function setButtonText(heart, button) {
     );
   }
 }
-
-function openDialog() {
-  if (dialog.open || dialog.hasAttribute('open')) {
-    return;
-  }
-
-  if (typeof dialog.showModal === 'function') {
-    dialog.showModal();
-  } else {
-    dialog.setAttribute('open', '');
-  }
-}
-
-function closeDialog() {
-  if (!dialog.open && !dialog.hasAttribute('open')) {
-    return;
-  }
-
-  if (typeof dialog.close === 'function') {
-    dialog.close();
-  } else {
-    dialog.removeAttribute('open');
-  }
-}
-
-saveButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  openDialog();
-});
-
-dialogButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  closeDialog();
-});
