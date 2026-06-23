@@ -347,6 +347,34 @@
       </button>
     </dialog>
     <script src="./scripts/like.js"></script>
-    <script src="./scripts/dialog.js"></script>
+    <script>
+      const saveButton = document.querySelector('.save-button');
+      const dialog = document.querySelector('.dialog');
+      const dialogButton = document.querySelector('.dialog__button');
+
+      saveButton.onclick = () => {
+        if (dialog.open || dialog.hasAttribute('open')) {
+          return;
+        }
+
+        if (typeof dialog.showModal === 'function') {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute('open', '');
+        }
+      };
+
+      dialogButton.onclick = () => {
+        if (!dialog.open && !dialog.hasAttribute('open')) {
+          return;
+        }
+
+        if (typeof dialog.close === 'function') {
+          dialog.close();
+        } else {
+          dialog.removeAttribute('open');
+        }
+      };
+    </script>
   </body>
 </html>
